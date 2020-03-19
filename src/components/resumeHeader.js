@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     marginRight: "10%",
-    marginTop: "1vh",
+    marginTop: "2vh",
     [theme.breakpoints.down("sm")]: {
       display: "block",
       textAlign: "center"
