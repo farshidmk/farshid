@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/farshid/static/css/main.039713ef.chunk.css",
+    "main.js": "/farshid/static/js/main.55917d90.chunk.js",
+    "main.js.map": "/farshid/static/js/main.55917d90.chunk.js.map",
+    "runtime~main.js": "/farshid/static/js/runtime~main.e7b927f2.js",
+    "runtime~main.js.map": "/farshid/static/js/runtime~main.e7b927f2.js.map",
+    "static/css/2.2c680a76.chunk.css": "/farshid/static/css/2.2c680a76.chunk.css",
+    "static/js/2.088b66b4.chunk.js": "/farshid/static/js/2.088b66b4.chunk.js",
+    "static/js/2.088b66b4.chunk.js.map": "/farshid/static/js/2.088b66b4.chunk.js.map",
+    "index.html": "/farshid/index.html",
+    "precache-manifest.26cf67f2b2a5b0241be476f30c5636d5.js": "/farshid/precache-manifest.26cf67f2b2a5b0241be476f30c5636d5.js",
+    "service-worker.js": "/farshid/service-worker.js",
+    "static/css/2.2c680a76.chunk.css.map": "/farshid/static/css/2.2c680a76.chunk.css.map",
+    "static/css/main.039713ef.chunk.css.map": "/farshid/static/css/main.039713ef.chunk.css.map",
+    "static/media/App.css": "/farshid/static/media/dastnevis.e8354ea8.otf",
+    "static/media/font-awesome.css": "/farshid/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/learning.png": "/farshid/static/media/learning.459169d7.png",
+    "static/media/profile.jpg": "/farshid/static/media/profile.76ff687c.jpg"
+  }
+}
