@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import imgProfile from "../resources/images/profile.jpg";
@@ -17,20 +18,33 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     marginRight: "20%",
-    marginTop: "3vh"
+    marginTop: "3vh",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "auto",
+      marginRight: "auto"
+    }
   },
   name: {
     display: "flex",
     alignItems: "center",
     marginRight: "10%",
-    marginTop: "1vh"
-    // fontSize: "5vh"
+    marginTop: "1vh",
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      textAlign: "center"
+      // fontSize: " 10vw"
+    }
   },
   imageNameDiv: {
     display: "flex",
-    // justifyContent: "center",
     flexDirection: "column",
-    width: "50%"
+    width: "50%",
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
+      border: "2px solid red"
+    }
   },
   header: {
     display: "flex",
@@ -40,7 +54,10 @@ const useStyles = makeStyles(theme => ({
   details: {
     display: "flex",
     flexDirection: "column",
-    width: "50%"
+    width: "50%",
+    [theme.breakpoints.down("sm")]: {
+      display: "none"
+    }
   },
   detailsElements: {
     marginLeft: "1vh"
