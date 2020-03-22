@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c82de5071adbeb58e1ae248a73890576",
+    "revision": "3922f86ba962914a4b6a5f85d4821056",
     "url": "/farshid/index.html"
   },
   {
-    "revision": "3f99b91b927e395462ce",
+    "revision": "deedfa7197a3fad22d05",
     "url": "/farshid/static/css/2.2c680a76.chunk.css"
   },
   {
-    "revision": "bcf539bf654ea77be65b",
+    "revision": "b16f659abc9245ab04da",
     "url": "/farshid/static/css/main.039713ef.chunk.css"
   },
   {
-    "revision": "3f99b91b927e395462ce",
-    "url": "/farshid/static/js/2.088b66b4.chunk.js"
+    "revision": "deedfa7197a3fad22d05",
+    "url": "/farshid/static/js/2.03e37466.chunk.js"
   },
   {
-    "revision": "bcf539bf654ea77be65b",
-    "url": "/farshid/static/js/main.55917d90.chunk.js"
+    "revision": "b16f659abc9245ab04da",
+    "url": "/farshid/static/js/main.f069a696.chunk.js"
   },
   {
     "revision": "c3f992d403aa5241e219",
