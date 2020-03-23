@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import imgProfile from "../resources/images/profile.jpg";
+import imgProfile from "../../resources/images/profile.jpg";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 import List from "@material-ui/core/List";
@@ -29,6 +29,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     marginRight: "10%",
     marginTop: "2vh",
+    fontSize: "4vw",
     [theme.breakpoints.down("sm")]: {
       display: "block",
       textAlign: "center"
@@ -42,14 +43,13 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       display: "block",
       marginLeft: "auto",
-      marginRight: "auto",
-      border: "2px solid red"
+      marginRight: "auto"
     }
   },
   header: {
     display: "flex",
     marginTop: "0vh",
-    backgroundColor: "#82b0fa"
+    backgroundColor: theme.palette.primary.light
   },
   details: {
     display: "flex",
@@ -71,9 +71,7 @@ export default function ResumeHeader() {
     <div className={classes.header}>
       <div className={classes.imageNameDiv}>
         <img className={classes.image} src={imgProfile} alt="profile_image" />
-        <Typography variant="h4" className={classes.name}>
-          فرشید منوچهری کلانتری
-        </Typography>
+        <Typography className={classes.name}>فرشید منوچهری کلانتری</Typography>
       </div>
 
       <div className={classes.details}>

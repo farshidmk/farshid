@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import Resume from "./components/resume";
+import Resume from "./components/resume/Resume";
 
 const theme = createMuiTheme({
   palette: {
@@ -44,10 +44,10 @@ const theme = createMuiTheme({
 });
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    {/* <App /> */}
-    <Resume />
-  </ThemeProvider>,
+  // <ThemeProvider theme={theme}>
+  // {/* <App /> */}
+  <Resume />,
+  // </ThemeProvider>,
   document.getElementById("root")
 );
 
