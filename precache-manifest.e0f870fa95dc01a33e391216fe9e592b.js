@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "590ff545d83dbcc9ec5c59c66bd5b07f",
+    "revision": "e61d4f09c8b6699f0e4507b13504121e",
     "url": "/farshid/index.html"
   },
   {
-    "revision": "5f8e98f5ec7b48e8f48a",
-    "url": "/farshid/static/css/2.3c6f5baf.chunk.css"
+    "revision": "29188a2a02dd5e749fba",
+    "url": "/farshid/static/css/2.2c680a76.chunk.css"
   },
   {
-    "revision": "373c020e6905f3867444",
-    "url": "/farshid/static/css/main.039713ef.chunk.css"
+    "revision": "a9b77556b71341895dab",
+    "url": "/farshid/static/css/main.c591bf3a.chunk.css"
   },
   {
-    "revision": "5f8e98f5ec7b48e8f48a",
-    "url": "/farshid/static/js/2.89ce11dc.chunk.js"
+    "revision": "29188a2a02dd5e749fba",
+    "url": "/farshid/static/js/2.7f63060d.chunk.js"
   },
   {
-    "revision": "373c020e6905f3867444",
-    "url": "/farshid/static/js/main.5c84f04e.chunk.js"
+    "revision": "a9b77556b71341895dab",
+    "url": "/farshid/static/js/main.587e30a0.chunk.js"
   },
   {
     "revision": "c3f992d403aa5241e219",
     "url": "/farshid/static/js/runtime~main.e7b927f2.js"
+  },
+  {
+    "revision": "b61db981d20267b101d907e73035b329",
+    "url": "/farshid/static/media/bamshad.b61db981.ttf"
   },
   {
     "revision": "e8354ea8e6c1432563271acb2f80cc30",
@@ -46,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/farshid/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  {
+    "revision": "43b65538e7017e66b0c06a529a838baa",
+    "url": "/farshid/static/media/jaleh.43b65538.ttf"
   },
   {
     "revision": "459169d74d4ff33f9d61d0d5d52f7b31",
