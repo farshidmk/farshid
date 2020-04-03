@@ -36,3 +36,11 @@
   font-family: "dastnevis";
   src: url("./resources/dastnevis.otf");
 }
+@font-face {
+  font-family: "bamshad";
+  src: url("./resources/bamshad.ttf");
+}
+@font-face {
+  font-family: "esfahan";
+  src: url("./resources/jaleh.ttf");
+}

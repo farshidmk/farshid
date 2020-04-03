@@ -1,3 +1,8 @@
+import React from "react";
+import SportsBasketballIcon from "@material-ui/icons/SportsBasketball";
+import ImportContactsIcon from "@material-ui/icons/ImportContacts";
+import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
+
 export const educations = [
   {
     avatar: "Dip",
@@ -38,7 +43,23 @@ export const educations = [
 
 export const abilities = [
   {
-    title: "English",
+    title: "JavaScript",
+    star: 8
+  },
+  {
+    title: "React JS",
+    star: 7
+  },
+  {
+    title: "Node JS",
+    star: 5
+  },
+  {
+    title: "HTML & CSS",
+    star: 6
+  },
+  {
+    title: "Version Control System",
     star: 6
   },
   {
@@ -46,23 +67,7 @@ export const abilities = [
     star: 5
   },
   {
-    title: "Version Control System",
-    star: 6
-  },
-  {
-    title: "JavaScript",
-    star: 8
-  },
-  {
-    title: "Node JS",
-    star: 5
-  },
-  {
-    title: "React JS",
-    star: 7
-  },
-  {
-    title: "HTML & CSS",
+    title: "English",
     star: 6
   },
   {
@@ -77,39 +82,18 @@ export const abilities = [
 
 export const otherAbilities = [
   {
-    title: "Football",
-    star: 8
+    title: "ورزشکار",
+    subheader: "بسکتبال - فوتبال - واليبال - پينگ پنگ",
+    icon: <SportsBasketballIcon />
   },
   {
-    title: "Basketball",
-    star: 9
+    title: "کتاب خوان",
+    subheader: "روانشناسی - رمان",
+    icon: <ImportContactsIcon />
   },
   {
-    title: "Version Control System",
-    star: 6
-  },
-  {
-    title: "JavaScript",
-    star: 8
-  },
-  {
-    title: "Node JS",
-    star: 5
-  },
-  {
-    title: "React JS",
-    star: 7
-  },
-  {
-    title: "HTML & CSS",
-    star: 6
-  },
-  {
-    title: "Team Work",
-    star: 10
-  },
-  {
-    title: "Photoshop",
-    star: 6
+    title: "مدل شخصیت در تست MTBI",
+    subheader: "ISTJ",
+    icon: <AssignmentIndIcon />
   }
 ];

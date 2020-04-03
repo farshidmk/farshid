@@ -27,13 +27,10 @@ const StarCreator = props => {
   for (let i = 0; i < empty; i++) {
     finallStars.push(<StarBorderIcon />);
   }
-
-  console.log(complete);
   return (
     <>
-      {finallStars.map(star => {
-        console.log("star", star);
-        return star;
+      {finallStars.map((star, index) => {
+        return <span key={index}>{star}</span>;
       })}
     </>
   );
