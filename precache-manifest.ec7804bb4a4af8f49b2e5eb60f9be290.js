@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e61d4f09c8b6699f0e4507b13504121e",
+    "revision": "576fe7ec68b871c5fe4ae004539a1dbf",
     "url": "/farshid/index.html"
   },
   {
-    "revision": "29188a2a02dd5e749fba",
-    "url": "/farshid/static/css/2.2c680a76.chunk.css"
+    "revision": "d5c0b6ebda73bac56c30",
+    "url": "/farshid/static/css/2.1a1f74f1.chunk.css"
   },
   {
-    "revision": "a9b77556b71341895dab",
-    "url": "/farshid/static/css/main.c591bf3a.chunk.css"
+    "revision": "3dcc06f94bb1901ed560",
+    "url": "/farshid/static/css/main.fe8f2fab.chunk.css"
   },
   {
-    "revision": "29188a2a02dd5e749fba",
-    "url": "/farshid/static/js/2.7f63060d.chunk.js"
+    "revision": "d5c0b6ebda73bac56c30",
+    "url": "/farshid/static/js/2.f0ed2aae.chunk.js"
   },
   {
-    "revision": "a9b77556b71341895dab",
-    "url": "/farshid/static/js/main.587e30a0.chunk.js"
+    "revision": "3dcc06f94bb1901ed560",
+    "url": "/farshid/static/js/main.7e82a6b5.chunk.js"
   },
   {
-    "revision": "c3f992d403aa5241e219",
-    "url": "/farshid/static/js/runtime~main.e7b927f2.js"
+    "revision": "8f2e52a5781769728949",
+    "url": "/farshid/static/js/runtime~main.fb0ad926.js"
   },
   {
     "revision": "b61db981d20267b101d907e73035b329",
