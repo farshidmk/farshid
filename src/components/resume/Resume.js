@@ -12,25 +12,32 @@ import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import PriorityHighTwoToneIcon from "@material-ui/icons/PriorityHighTwoTone";
 import { educations, abilities, otherAbilities } from "./ResumeTexts";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
 import ResumeHeader from "./ResumeHeader";
 import Box from "@material-ui/core/Box";
 import StarCreator from "./StarCreator";
+import VisibilityIcon from "@material-ui/icons/Visibility";
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
 const ExpansionPanel = withStyles({
   root: {
     border: "1px solid rgba(0, 0, 0, .125)",
     boxShadow: "none",
     "&:not(:last-child)": {
-      borderBottom: 0
+      borderBottom: 0,
     },
     "&:before": {
-      display: "none"
+      display: "none",
     },
     "&$expanded": {
-      margin: "auto"
-    }
+      margin: "auto",
+    },
   },
-  expanded: {}
+  expanded: {},
 })(MuiExpansionPanel);
 
 const ExpansionPanelSummary = withStyles({
@@ -40,50 +47,59 @@ const ExpansionPanelSummary = withStyles({
     marginBottom: -1,
     minHeight: 56,
     "&$expanded": {
-      minHeight: 56
-    }
+      minHeight: 56,
+    },
   },
   content: {
     "&$expanded": {
-      margin: "12px 0"
-    }
+      margin: "12px 0",
+    },
   },
-  expanded: {}
+  expanded: {},
 })(MuiExpansionPanelSummary);
 
-const ExpansionPanelDetails = withStyles(theme => ({
+const ExpansionPanelDetails = withStyles((theme) => ({
   root: {
-    padding: theme.spacing(2)
-  }
+    padding: theme.spacing(2),
+  },
 }))(MuiExpansionPanelDetails);
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   text: {
     fontFamily: "dastnevis",
-    fontSize: "1.5vw"
+    fontSize: "1.5vw",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "17px",
+    },
   },
   historyText: {
     fontFamily: "bamshad",
     fontSize: "1.5vw",
     textAlign: "rtl",
     marginLeft: "auto",
-    marginRight: "5vw"
+    marginRight: "5vw",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "15px",
+    },
   },
   headerText: {
     fontFamily: "bamshad",
-    fontSize: "2.2vw"
+    fontSize: "2vw",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "20px",
+    },
   },
   educationSection: {
     direction: "ltr",
     width: "100%",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
   cardRoot: {
-    width: "80%",
+    // width: "90vw",
     backgroundColor: theme.palette.primary.light,
-    color: theme.palette.primary.dark
+    color: theme.palette.primary.dark,
   },
   cardRootOtherAbilities: {
     width: "45%",
@@ -91,11 +107,11 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.primary.light,
     color: theme.palette.secondary.dark,
     [theme.breakpoints.down("sm")]: {
-      width: "80%"
-    }
+      width: "80%",
+    },
   },
   expansionDetails: {
-    backgroundColor: theme.palette.grey[200]
+    backgroundColor: theme.palette.grey[200],
   },
   box: {
     display: "flex",
@@ -103,46 +119,72 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
     width: "45%",
     padding: "8px",
-    border: `1px solid ${theme.palette.primary.dark}`
+    border: `1px solid ${theme.palette.primary.dark}`,
+    [theme.breakpoints.down("sm")]: {
+      width: "80%",
+    },
   },
   stars: {
-    marginRight: "auto"
+    marginRight: "auto",
   },
   avatar: {
     backgroundColor: theme.palette.warning.light,
-    color: theme.palette.primary.dark
+    color: theme.palette.primary.dark,
   },
   circularProgress: {
-    color: "gold"
+    color: "gold",
   },
   detailsSection: {
     // maxHeight: "90vh",
-    overflow: "auto"
+    overflow: "auto",
   },
   otherAbilitiesText: {
     fontFamily: "esfahan",
     textAlign: "right",
-    marginRight: "10px"
+    marginRight: "10px",
   },
   bullet: {
     display: "inline-block",
     margin: "0 2px",
-    transform: "scale(0.8)"
-  }
+    transform: "scale(0.8)",
+  },
 }));
 
 export default function Resume() {
   const [expanded, setExpanded] = React.useState("panel1");
+  const [openAlert, setOpenAlert] = React.useState(false);
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
-  const handleChange = panel => (event, newExpanded) => {
+  const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
+  };
+
+  const handleCloseAlert = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpenAlert(false);
   };
 
   return (
     <div>
       <ResumeHeader />
+
+      <Snackbar
+        open={openAlert}
+        autoHideDuration={6000}
+        onClose={handleCloseAlert}
+      >
+        <Alert
+          onClose={handleCloseAlert}
+          severity="warning"
+          style={{ direction: "ltr" }}
+        >
+          This Action Is Not Working Yet...!
+        </Alert>
+      </Snackbar>
 
       <div className={classes.detailsSection}>
         <ExpansionPanel
@@ -181,7 +223,7 @@ export default function Resume() {
             <Grid container className={classes.educationSection} spacing={1}>
               {educations.map((ed, index) => {
                 return (
-                  <Grid item sm={12} md={6} key={index}>
+                  <Grid item xs={12} md={6} key={index}>
                     <Card className={classes.cardRoot}>
                       <CardHeader
                         avatar={
@@ -190,16 +232,26 @@ export default function Resume() {
                           </Avatar>
                         }
                         action={
-                          <IconButton
-                            aria-label="more"
-                            onClick={() => {
-                              alert(
-                                "In the future I will show special page for what ever learned from there!"
-                              );
-                            }}
-                          >
-                            <PriorityHighTwoToneIcon />
-                          </IconButton>
+                          <>
+                            {ed.document ? (
+                              <IconButton
+                                aria-label="more"
+                                onClick={() => {
+                                  window.open(`${ed.document}`, "_blank");
+                                }}
+                              >
+                                <VisibilityIcon />
+                              </IconButton>
+                            ) : null}
+                            <IconButton
+                              aria-label="more"
+                              onClick={() => {
+                                setOpenAlert(true);
+                              }}
+                            >
+                              <PriorityHighTwoToneIcon />
+                            </IconButton>
+                          </>
                         }
                         title={ed.title}
                         subheader={ed.subheader}
@@ -226,7 +278,7 @@ export default function Resume() {
             className={classes.expansionDetails}
             style={{
               display: "flex",
-              flexDirection: "column"
+              flexDirection: "column",
             }}
           >
             <p className={classes.historyText}>

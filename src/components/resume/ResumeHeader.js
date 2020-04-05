@@ -11,7 +11,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   image: {
     borderRadius: "50%",
     width: "25%",
@@ -20,23 +20,27 @@ const useStyles = makeStyles(theme => ({
     // marginRight: "20%",
     marginTop: "1.5vh",
     [theme.breakpoints.down("sm")]: {
+      width: "30%",
       marginLeft: "auto",
-      marginRight: "auto"
-    }
+      marginRight: "auto",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "50%",
+    },
   },
   name: {
     display: "flex",
     alignItems: "center",
     // marginRight: "8%",
     marginTop: "1vh",
-    fontSize: "2vw",
+    fontSize: "2.7vw",
     fontFamily: "bamshad",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "3vw",
+      fontSize: "20px",
       display: "block",
-      textAlign: "center"
+      textAlign: "center",
       // fontSize: " 10vw"
-    }
+    },
   },
   imageNameDiv: {
     display: "flex",
@@ -48,8 +52,8 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       display: "block",
       marginLeft: "auto",
-      marginRight: "auto"
-    }
+      marginRight: "auto",
+    },
   },
   imageNameRootDiv: {
     display: "flex",
@@ -57,33 +61,33 @@ const useStyles = makeStyles(theme => ({
     marginLeft: "auto",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "auto",
-      marginRight: "auto"
-    }
+      marginRight: "auto",
+    },
   },
 
   header: {
     display: "flex",
     marginTop: "0vh",
-    backgroundColor: theme.palette.primary.light
+    backgroundColor: theme.palette.primary.light,
   },
   details: {
     display: "flex",
     flexDirection: "column",
     width: "50%",
     [theme.breakpoints.down("sm")]: {
-      display: "none"
-    }
+      display: "none",
+    },
   },
   detailsElements: {
-    marginLeft: "1vh"
+    marginLeft: "1vh",
   },
   showNumber: {
     fontFamily: "bamshad",
-    cursor: "zoom-in"
+    cursor: "zoom-in",
   },
   listItem: {
-    padding: "0px"
-  }
+    padding: "0px",
+  },
 }));
 
 export default function ResumeHeader() {
