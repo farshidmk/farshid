@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/farshid/static/css/main.fe8f2fab.chunk.css",
-    "main.js": "/farshid/static/js/main.7e82a6b5.chunk.js",
-    "main.js.map": "/farshid/static/js/main.7e82a6b5.chunk.js.map",
+    "main.js": "/farshid/static/js/main.97989a6d.chunk.js",
+    "main.js.map": "/farshid/static/js/main.97989a6d.chunk.js.map",
     "runtime~main.js": "/farshid/static/js/runtime~main.fb0ad926.js",
     "runtime~main.js.map": "/farshid/static/js/runtime~main.fb0ad926.js.map",
     "static/css/2.1a1f74f1.chunk.css": "/farshid/static/css/2.1a1f74f1.chunk.css",
     "static/js/2.f0ed2aae.chunk.js": "/farshid/static/js/2.f0ed2aae.chunk.js",
     "static/js/2.f0ed2aae.chunk.js.map": "/farshid/static/js/2.f0ed2aae.chunk.js.map",
     "index.html": "/farshid/index.html",
-    "precache-manifest.ec7804bb4a4af8f49b2e5eb60f9be290.js": "/farshid/precache-manifest.ec7804bb4a4af8f49b2e5eb60f9be290.js",
+    "precache-manifest.6566d9e29c4c977e93fe33e79c670bdc.js": "/farshid/precache-manifest.6566d9e29c4c977e93fe33e79c670bdc.js",
     "service-worker.js": "/farshid/service-worker.js",
     "static/css/2.1a1f74f1.chunk.css.map": "/farshid/static/css/2.1a1f74f1.chunk.css.map",
     "static/css/main.fe8f2fab.chunk.css.map": "/farshid/static/css/main.fe8f2fab.chunk.css.map",
